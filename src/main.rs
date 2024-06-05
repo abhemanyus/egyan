@@ -3,7 +3,6 @@ use scraper::{Html, Selector};
 use std::{
     env::args,
     fs::{create_dir_all, write},
-    io::Read,
     path::PathBuf,
 };
 
@@ -50,7 +49,6 @@ fn main() {
                     let pdf_selector =
                         Selector::parse("td.standard:nth-child(1) > a:nth-child(1)").unwrap();
                     let pdf = unit_page.select(&pdf_selector).next().unwrap();
-                    let pdf_name = pdf.text().next().unwrap().trim();
                     let pdf_path = pdf.attr("href").unwrap();
                     let full_dir_path = PathBuf::new()
                         .join(index_name)
