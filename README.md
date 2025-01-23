@@ -57,4 +57,3 @@ Possible Issues:
 1. **Selector Errors**: Update CSS selectors in `src/main.rs` if website structure changes
 2. **Build Errors**: Ensure Rust is properly installed with `rustc --version`
 3. **SSL Errors**: Update root certificates on your system
-4. **Complete Incompatibility**: In the unlikely scenario that eGyanKosh completely changes thi
