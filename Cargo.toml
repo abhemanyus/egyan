@@ -3,6 +3,9 @@ name = "egyan"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+path = "src/lib.rs"
+
 [dependencies]
 reqwest = { version = "0.12.4", features = ["blocking", "native-tls"], default-features = false }
 scraper = "0.19.0"
